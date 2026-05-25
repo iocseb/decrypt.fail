@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <div class="post-meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y-%m-%d" }}</time>
+    {% if page.tags.size > 0 %}
+    <span class="tags">
+      {% for tag in page.tags %}<a class="tag" href="/tags/#{{ tag }}">#{{ tag }}</a>{% endfor %}
+    </span>
+    {% endif %}
+  </div>
+
+  {{ content }}
+
+  <hr>
+  <a class="back" href="/">← back to the garden</a>
+</article>
