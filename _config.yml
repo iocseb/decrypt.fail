@@ -1,0 +1,31 @@
+title: decrypt.fail
+description: "seb's digital garden — infosec, decentralization, and tinkering."
+url: "https://decrypt.fail"
+author: seb
+
+# Build settings
+markdown: kramdown
+permalink: /blog/:title/
+
+# Pretty-print URLs without .html
+# (GitHub Pages serves /whoami/ -> /whoami/index.html automatically)
+
+# Default front matter so individual files stay clean
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+
+# Files Jekyll should ignore
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
