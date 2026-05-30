@@ -3,6 +3,9 @@ description: "seb's digital garden — infosec, decentralization, and tinkering.
 url: "https://decrypt.fail"
 author: seb
 
+# Theme
+theme: minima
+
 # Build settings
 markdown: kramdown
 permalink: /blog/:title/
